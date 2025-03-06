@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	// _ "github.com/fraydd/eventhub-telegraf-plugin/plugins/inputs/eventhub"
+	_ "github.com/fraydd/eventhub-telegraf-plugin/plugins/inputs/eventhub"
 	"github.com/influxdata/telegraf/plugins/common/shim"
 )
 
