@@ -1,0 +1,14 @@
+## compilar y ejecutar en windows
+$env:GOOS = "windows"
+$env:GOARCH = "amd64"
+
+go build -o eventhub-telegraf-plugin.exe cmd/eventhub-telegraf-plugin/main.go
+
+.\eventhub-telegraf-plugin.exe -config etc/eventhub-telegraf-plugin.conf
+
+## para LINUX
+
+$env:GOOS = "linux"
+$env:GOARCH = "amd64"
+
+go build -o eventhub-telegraf-plugin cmd/eventhub-telegraf-plugin/main.go
